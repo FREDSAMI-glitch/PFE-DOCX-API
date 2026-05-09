@@ -1,0 +1,79 @@
+{
+  "template": "template_pfe_encg_original_mise_en_page.docx",
+  "description": "Template DOCX basé sur le rapport de stage original : page de garde, styles, tableaux, pages de chapitre et mise en page conservés. À remplir avec docxtpl / API Python / n8n.",
+  "variables": {
+    "page_de_garde": [
+      "titre",
+      "type_rapport",
+      "filiere",
+      "entreprise_accueil",
+      "nom_etudiant",
+      "encadrant_academique",
+      "fonction_encadrant",
+      "tuteur_stage",
+      "fonction_tuteur",
+      "jury_1",
+      "fonction_jury_1",
+      "jury_2",
+      "fonction_jury_2",
+      "periode_stage",
+      "annee_universitaire"
+    ],
+    "front_matter": [
+      "remerciements",
+      "avant_propos"
+    ],
+    "listes": [
+      "abreviation_1",
+      "signification_1",
+      "abreviation_2",
+      "signification_2",
+      "abreviation_3",
+      "signification_3",
+      "abreviation_4",
+      "signification_4",
+      "abreviation_5",
+      "signification_5",
+      "abreviation_6",
+      "signification_6",
+      "figure_1_titre",
+      "figure_1_page",
+      "figure_2_titre",
+      "figure_2_page",
+      "tableau_1_titre",
+      "tableau_1_page",
+      "tableau_2_titre",
+      "tableau_2_page"
+    ],
+    "contenu_rapport": [
+      "introduction_generale",
+      "chapitre_1_titre",
+      "chapitre_1_introduction",
+      "chapitre_1_contenu",
+      "chapitre_1_conclusion",
+      "chapitre_2_titre",
+      "chapitre_2_introduction",
+      "chapitre_2_contenu",
+      "chapitre_2_conclusion",
+      "chapitre_3_titre",
+      "chapitre_3_introduction",
+      "chapitre_3_contenu",
+      "chapitre_3_conclusion",
+      "conclusion_generale",
+      "annexe_1_titre",
+      "annexe_1_contenu",
+      "annexe_2_titre",
+      "annexe_2_contenu",
+      "bibliographie"
+    ]
+  },
+  "n8n_output_expected": {
+    "titre": "string",
+    "introduction_generale": "string",
+    "chapitre_1_contenu": "string",
+    "chapitre_2_contenu": "string",
+    "chapitre_3_contenu": "string",
+    "bibliographie": "string"
+  },
+  "important": "La table des matières doit être mise à jour dans Word après remplissage : clic droit > Mettre à jour les champs. Pour insérer des images/tableaux avancés, utiliser docxtpl InlineImage ou générer des tableaux avec python-docx."
+}
